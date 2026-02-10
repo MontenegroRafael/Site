@@ -1,107 +1,136 @@
 <!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rafael Montenegro</title>
-  </head>
-  <body>
-    <header>
-      <h1>>>> Rafael Montenegro:</h1>
-      <nav>
-        <!--Seção de navegação do site-->
-        <ul>
-          <li><a href="#sobre">Sobre mim:</a></li>
-          <!-- utilização do href para criar um link interno para uma parte do texto-->
-          <li><a href="#projetos">Projetos:</a></li>
-          <li><a href="#contatos">Contatos:</a></li>
-          <li>
-            <a href="http://www.google.com" target="_blank"
-              >www.ACESSE o GOOGLE !</a
-            >
-          </li>
-          <!-- target -utilizado para abrir uma nova guia no navegador ao clicar no link, assim o usuario não sai da sua página-->
-        </ul>
-      </nav>
-    </header>
-    <section id="sobre">
-      <!-- id - utilizado para informar o endereço do link feito com o href-->
-      <h2>Sobre mim</h2>
-      <img src="Teste.png" alt="Imagem de pefil" title="Imagem de Perfil" />
-      <!-- title - utilizado para quando passar o mouse por cima aparecer um pop up com o texto Imagem de perfil-->
-      <article>
-        <p>
-          Olá! Este é meu espaço, criado para expor informações sobre o que
-          estou apredendo no momento. <br />
-          Deixarei aqui alguns projetos feitos por mim enquanto estou
-          aprendendo.
-        </p>
-      </article>
-      <aside>
-        <h3>Habilidades</h3>
-        <ul>
-          <li>HTML</li>
-          <li>C#</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
-        </ul>
-      </aside>
+<html lang="pt-br"> <!-- um site Brasileiro -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafael Montenegro</title>
+</head>
+
+<body>
+  <header>
+    <h1>>>> Rafael Montenegro:</h1>
+    <nav>
+      <!--Seção de navegação do site-->
+      <ul>
+        <li><a href="#sobre">Sobre mim:</a></li>
+        <!-- utilização do href para criar um link interno para uma parte do texto-->
+        <li><a href="#projetos">Projetos:</a></li>
+        <li><a href="#contatos">Contatos:</a></li>
+        <li>
+          <a href="http://www.google.com" target="_blank">www.ACESSE o GOOGLE !</a>
+        </li>
+        <!-- target -utilizado para abrir uma nova guia no navegador ao clicar no link, assim o usuario não sai da sua página-->
+      </ul>
+    </nav>
+  </header>
+  <section id="sobre">
+    <!-- id - utilizado para informar o endereço do link feito com o href-->
+    <h2>Sobre mim</h2>
+    <img src="Teste.png" alt="Imagem de pefil" title="Imagem de Perfil" />
+    <!-- title - utilizado para quando passar o mouse por cima aparecer um pop up com o texto Imagem de perfil-->
+    <article>
+      <p>
+        Olá! Este é meu espaço, criado para expor informações sobre o que
+        estou apredendo no momento. <br />
+        Deixarei aqui alguns projetos feitos por mim enquanto estou
+        aprendendo.
+      </p>
+    </article>
+    <aside>
+      <h3>Habilidades e Tecnologias</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tecnologia</th>
+            <th>Nível</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Iniciante</td>
+            <td>Construção de páginas web semânticas e rsponsivas.</td>
+          </tr>
+          <tr>
+            <td>C#</td>
+            <td>Intermediario</td>
+            <td>Programação orientada a objeto com banco de dados.</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Iniciante</td>
+            <td>Experiência com flexbox, grid e animações CSS.</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Iniciante</td>
+            <td>
+              Desenvolvimento de scripts do lado do cliente para interações.
+            </td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Iniciante</td>
+            <td>Condicionais, criação de tabelas e criação de listas.</td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+  </section>
+  <section id="projetos">
+    <h2>Projetos</h2>
+
+    <article>
+      <h3>Portfólios</h3>
+
+      <p>Estes foram os meus projetos realizados:</p>
+    </article>
+  </section>
+  <!-- uma nova secção-->
+  <footer>
+    <!-- roda pé da página-->
+
+    <section id="contatos">
+      <h2>- Contatos:</h2>
+      <address>
+        E-mail: <a href="mailto:rafaelmrc3@gmail.com">rafaelmrc3@gmail.com</a><br />
+        Telefone: <a href="tel:+5571999737206">71-99973-7206</a><br />
+      </address>
+
+      <p>Tem um projeto em mente, entre em contato.</p>
+      <br />
+      <p>Deixe também seu contato abaixo:</p>
+      <form action="">
+        <label for="nome">Nome:.....</label>
+        <input type="text" id="nome" name="nome" required /><br />
+        <label for="email">E-mail:....</label>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="telefone">Telefone:.</label>
+        <input type="tel" id="telefone" name="telefone" /><br />
+
+        <label for="assunto">Assunto:..</label>
+        <select name="assunto" id="assunto">
+          <option value="orcamento">Orçamento</option>
+          <option value="duvida">Dúvida</option>
+          <option value="outro">Outro</option>
+        </select>
+        <br />
+        <label for="menssagem">Menssagem: </label>
+        <textarea name="menssagen" id="menssagem" cols="20" rows="3"></textarea>
+        <br />
+        <br />
+        <input type="checkbox" id="inscricao" name="inscricao" />
+        <label for="inscricao">Deseja receber e-mails?</label>
+
+        <input type="submit" value="Enviar Menssagem" />
+      </form>
     </section>
-    <section id="projetos">
-      <h2>Projetos</h2>
+    <br />
+    <br />
+    <p>Direitos reservados a Rafael</p>
+  </footer>
+</body>
 
-      <article>
-        <h3>Portfólios</h3>
-
-        <p>Estes foram os meus projetos realizados:</p>
-      </article>
-    </section>
-    <!-- uma nova secção-->
-    <footer>
-      <!-- roda pé da página-->
-
-      <section id="contatos">
-        <h2> - Contatos:</h2>
-        <address>
-          E-mail: <a href="mailto:rafaelmrc3@gmail.com">rafaelmrc3@gmail.com</a
-          ><br />
-          Telefone: <a href="tel:+5571999737206">71-99973-7206</a><br />
-        </address>
-
-        <p>Tem um projeto em mente, entre em contato.</p><br>
-        <p>Deixe também seu contato abaixo:</p>
-        <form action="">
-          <label for="nome">Nome:.....</label>
-          <input type="text" id="nome" name="nome" required><br>
-          <label for="email">E-mail:....</label>
-          <input type="email" id="email" name="email" required><br>
-          <label for="telefone">Telefone:.</label>
-          <input type="tel" id="telefone" name="telefone"><br>
-
-          <label for="assunto">Assunto:..</label>
-          <select name="assunto" id="assunto">
-            <option value="orcamento">Orçamento</option>
-            <option value="duvida">Dúvida</option>
-            <option value="outro">Outro</option>
-          </select>
-          <br>
-          <label for="menssagem">Menssagem: </label>
-          <textarea name="menssagen" id="menssagem" cols="20" rows="3"></textarea>
-          <br>
-          <br>
-          <input type="checkbox" id="inscricao" name="inscricao">
-          <label for="inscricao">Deseja receber e-mails?</label>
-
-          <input type="submit" value="Enviar Menssagem">
-
-
-        </form>
-      </section>
-      <br>
-      <br>
-      <p>Direitos reservados a Rafael</p>
-    </footer>
-    <!---->
-  </body>
 </html>
